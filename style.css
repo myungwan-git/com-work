@@ -1,2 +1,51 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean");
+
+body {margin: 0;}
+ul {list-style: none; margin: 0; padding: 0;}
+h1 {margin: 0;}
+h2 {margin: 0;}
+h3 {margin: 0;}
+p {margin: 0;}
+
+:root {
+  --bold-grey-color: #b2b2b2;
+  --grey-color: #a4a4a4;
+  --light-grey-color: #f1f1f1;
+  --red-color: #e33d16;
+  --font-title: 36px;
+  --font-middle: 24px;
+  --font-small: 16px;
+  --font-micro: 13px;
+}
+
+
+/*main*/
+.header__border {width: 90%; border-bottom: 2px solid var(--light-grey-color); margin: auto;}
+.header__inner {display: flex; width: 70%; justify-content: space-between; margin: auto; align-items: center; margin-top: 25px; padding-bottom: 5px;}
+.header__title {display: flex; align-items: center; font-size: var(--font-middle); color: var(--grey-color); margin-right: 40px;} 
+.header__small__text {font-size: var(--font-small); color: var(--grey-color);}
+.nav__list {display: flex; }
+.nav__list li {padding: 15px 25px; font-size: var(--font-small); font-weight: bold; color: var(--bold-grey-color); cursor: pointer;}
+
+.main { width: 90%; margin: 40px auto; }
+.main__inner {width: 65%; margin: auto;}
+.main__left
+,.main__right {flex-basis: 50%;}
+.main__inner__top {display: flex; justify-content: space-between;}
+.main__top {font-size: var(--font-title); padding: 20px 0;}
+.main__small {font-size: var(--font-small); font-weight: bold;}
+.main__red {color: var(--red-color);}
+.main__description {display: flex; margin: 15px 0; align-items: center;}
+.main__description p {border-bottom: 1px solid var(--grey-color); width: 70%; margin-left: 7px; padding-bottom: 10px; font-weight: bold;}
+.main__description img {width: 10%; background: var(--grey-color); padding: 8px;}
+.main__description .decription__small {font-size: var(--font-micro); color: var(--grey-color); padding-top: 5px;}
+
+
+
+
+
+
+
+
+
