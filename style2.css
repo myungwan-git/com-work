@@ -1,0 +1,17 @@
+/* common */
+* { padding:0; margin: 0; box-sizing: border-box;}
+li { list-style: none; }
+@media (min-width: 1200px) { .container { max-width: 1200px!important; } }
+
+/* quick */
+#mainQuick { position: fixed; right:15%; top:15%; background: gray; text-align: center; }
+#mainQuick h3 { font-size: 1rem; padding:10px 0; background: pink; color: #fff; }
+#mainQuick > nav > ul > li { border-bottom: 1px solid #fff; padding: 15px; }
+#mainQuick > nav > ul > li:last-child { border-bottom: none; } 
+#mainQuick > nav > ul > li p { font-size: 0.7rem; color: #333; }
+#mainQuick > nav > ul > li h2 { color: pink; font-size:1rem; }
+
+/* header */ 
+header { border-bottom: 1px solid red;  }
+header .header-cont { display: flex; justify-content: space-between; height: 78px; align-items: center; }
+header .header-cont nav { display: flex; flex-direction: row; justify-content: space-between; padding: 0; margin: 0; width: 55%;}

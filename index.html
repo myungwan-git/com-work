@@ -63,10 +63,59 @@
         <article class="form">
           <form action="" id="submit_form1">
             <div class="form__main">
-              <div class="form__title"></div>
-              <div class="form__type1">
-                <input type="text">
-              </div>
+              <div class="form__title"><strong>7초 보험료</strong> 간편계산 & 상담신청</div>
+              <section class="form__type1">
+                <div class="form__name">
+                  <input type="text" placeholder="이름(김롯데)" name="user_name" maxlength="8">
+                </div>
+                <div class="form__birth">
+                  <input type="text" placeholder="생년월일 (19900101)" name="user_birth" maxlength="8">
+                </div>
+                <div class="form__gender">
+                  <div class="form__gender-m form__gender__inner">
+                    <input type="radio" name="gender" value="m" id="gender_m">
+                    <label for="gender_m">남</label>
+                  </div>
+                  <div class="form__gender-f form__gender__inner">
+                    <input type="radio" name="gender" value="f" id="gender_f">
+                    <label for="gender_f">여</label>
+                  </div>
+                </div>
+                <div class="form__tel">
+                  <input type="text" placeholder="휴대폰번호 ( - 없이 입력)" name="user_tel" maxlength="12">
+                </div>
+              </section>
+
+              <section class="form__type2">
+                <div class="form__type2__left">
+                  <label>
+                    <input type="checkbox" name="agree1">
+                    <span class="form__agree">개인정보 수집 이용 및 제공 동의(필수)</span>
+                    <a href="#">더보기></a>
+                  </label>
+                </div>
+                <div class="form__type2__right">
+                  <label>
+                    <input type="checkbox" name="agree2">
+                    <span class="form__agree">개인정보 처리위탁 동의(필수)</span>
+                    <a href="#">더보기></a>
+                  </label>
+                </div>
+              </section>
+
+              <section class="form__type3">
+                <button type="button" class="gtm_calc_click" onclick=""></button>
+                <button type="button" class="gtm_consult_click" onclick=""></button>
+                <a href="#" class="gtm_kakao_click" target="_blank">상담하기</a>
+                <a href="#" class="gtm_happy_click" target="_blank">채팅으로 보험료확인</a>
+              </section>
+
+              <section class="form__type4">
+                <div class="form__bottom">
+                  <span>무료상담신청 <strong> 1800-0980</strong></span>
+                </div>
+              </section>
+
             </div>
           </form>
         </article>
