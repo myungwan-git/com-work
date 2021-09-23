@@ -1,0 +1,52 @@
+body { margin: 0;}
+h1,h2,h3 {margin: 0;}
+ul {list-style: none; margin: 0; padding: 0;}
+p {margin: 0;}
+a {text-decoration: none;}
+input {margin: 0; padding: 0;}
+:root {
+    --bold-grey: #7c7c7c;
+    --middle-grey: #cdcdcd;
+    --middle-red: #e4322b;
+    --middle-pink: #d25a73;
+}
+/*PC*/
+.container { max-width: 1102px; width: 100%; margin: auto;}
+.header__border {border-bottom: 1px solid var(--bold-grey);}
+.header__inner {display: flex; align-items: center; justify-content: space-between;}
+.header__inner h1 {flex-basis: 30%;}
+#nav {flex-basis: 70%;}/*width - 1,015*/
+.header__inner h1 img {width: 100%;}
+.nav__list {display: flex; justify-content: space-between;}
+.nav__list li { padding: 0 3.240886699507389%; font-size: 1rem; cursor: pointer;}
+.nav__list li:nth-last-child(1) {padding-right: 0;}
+
+.main { display: flex; justify-content: space-around; margin-top: 2.758620689655172%;} /*상위container*/
+.main__left,
+.main__right {flex-basis: 45%;}
+.main__logo img {width: 50%;}
+.main__title {font-size: 2.5rem; font-weight: bold; padding: 2.659574468085106% 0; line-height: 1.2;}
+.main__description {font-weight: 600; font-size: 1.125rem;}
+.main__description strong {color: var(--middle-red);}
+
+.main__list {display: flex; align-items: center; margin-bottom: 4.032258064516129%; border-bottom: 1px solid var(--bold-grey);}
+.main__right__img{flex-basis: 20%;}
+.main__right__img img {width: 80%; background-color: #7c7c7c; }
+.main__right__description {font-weight: 600; font-size: 1.125rem;}
+.main__right__description > span {font-size: 1rem; color:var(--bold-grey);}
+
+.form__gender { display: flex; }
+.gender__inner {position: relative;}
+.gender__inner label {background-color: var(--bold-grey); display: block; height: 30px; width: 30px;}
+.gender__inner input {opacity: 0; display: none; }
+.gender__inner input:checked + label {height: 30px; width: 30px; border: 1px solid var(--bold-grey); color: #fff; background-color: var(--middle-pink);}
+
+.form__type2 {display: flex;}
+.form__agree {position: relative;}
+.form__agree input {opacity: 0;}
+.form__agree label:before {content:''; position: absolute; border: 1px solid var(--bold-grey); border-radius: 50%; width: 22px; height: 22px; left: 0;}
+.form__agree input:checked + label:after {content: ''; position: absolute; width:15px; height: 15px; border-radius: 50%; background-color: red; left: 1.3%; top: 18%;}
+
+.form__container {background-color: var(--middle-grey); }
+.content-form__bg {width: 80%; background-color: #fff;}
+#submit_form1 { }
