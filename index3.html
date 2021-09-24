@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="./style3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>lotteinsu-renewal</title>
 </head>
 <body>
@@ -25,12 +26,15 @@
                   <li>보장분석시스템</li>
                 </ul>
               </nav>
+              <div class="m-nav">
+                <img src="	https://m.lotteinsu.com/img/mobile/left_menu.png" alt="전체메뉴">
+              </div>
             </div>
           </div>
         </div>
       </header>
 
-      <div class="content">
+      <div class="top-content">
         <div class="container">
           <section class="main">
             <div class="main__left">
@@ -75,10 +79,10 @@
 
       <article class="content-form">
         <div class="container form__container">
-          <div class="content-form__bg">
+          <div class="form-main">
             <form action="" id="submit_form1">
               <div class="form">
-                <div class="form__title">7초 보험료 간편계산 & 상담신청</div>
+                <div class="form__title"><strong>7초 보험료</strong> 간편계산 & 상담신청</div>
                 <section class="form__type1">
                   <div class="form__name">
                     <input type="text" placeholder="이름(김롯데)" name="user_name" maxlength="8">
@@ -105,36 +109,84 @@
                   <div class="form__agree type2__agree1">
                     <input type="checkbox" id="agree1" >
                     <label for="agree1">개인정보 수집 이용 및 제공 동의(필수)</label>
-                    <a href="">더보기 ></a>
+                    <a href="">더보기></a>
                   </div>
                   <div class="form__agree type2__agree2">
                     <input type="checkbox" id="agree2" >
                     <label for="agree2">개인정보 처리위착 동의(필수)</label>
-                    <a href="">더보기 ></a>
+                    <a href="">더보기></a>
                   </div>
                 </section>
 
                 <section class="form__type3">
                   <div class="form__btn">
-                    <button type="button" class="gtm_calc_click" onclick="">간편 보험료 계산</button>
-                    <button type="button" class="gtm_calc_click" onclick="">무료 상담신청</button>
-                    <button type="button" class="gtm_calc_click" onclick="">상담하기</button>
-                    <button type="button" class="gtm_calc_click" onclick="">채팅으로 보험료확인</button>
+                    <button type="button" class="gtm_calc_click" onclick=""><i class="fas fa-check label-check"></i>간편 보험료 계산</button>
+                    <button type="button" class="gtm_consult_click" onclick=""><i class="fas fa-check label-check"></i>무료 상담신청</button>
+                    <button type="button" class="gtm_kakao_click" onclick=""><i class="fas fa-comment"></i>상담하기</button>
+                    <button type="button" class="gtm_happy_click" onclick=""><i class="fas fa-check label-check"></i>채팅으로 보험료확인</button>
                   </div>
                 </section>
 
                 <section class="form__type4">
                   <div class="form__call-tel">
-                    무료상담신청 <strong>1800-0980</strong>
+                    무료상담신청 <strong><a href="tel:1800-0980">1800-0980</a></strong>
                   </div>
                 </section>
 
               </div>
             </form>
           </div>
+          <div class="content__tab">
+            <ul class="tab__list">
+              <li class="on">상품 알아보기</li>
+              <li>보장내용</li>
+              <li>보험료 예시/해지환급금</li>
+              <li>가입시 알아두실 사항</li>
+            </ul>
+          </div>
         </div>
       </article>
+
+      <div class="container content__container">
+        <article class="content on">
+          
+            <section class="content__sec1 content__section">
+              <h2 class="sec1__title">1) 건강한 '나'를 위한 보험료 할인(환급)!</h2>
+              <ul class="sec1__list">
+                <li>ㄴ건강등급 1-3등급 일 경우, 매년 1회 최대 15% 보험료 환급!</li>
+                <li>* 1년 주기로 건강등급을 재산정하여 매년 1회 최대 15% 보험료 환급</li>
+                <li>** 15~20세: 건강등급에 관계없이 최초 1회 보험료 할인 및 매년 1회 15% 환급 (보험나이기준)</li>
+                <li>*** 건강등급: 성별, 연령, BMI, 혈압, 공복혈당, 콜레스테롤, 흡연여부, 내원일수 등 다양한 건강 지표를 활용하여 피보험자의 상대적인 건강상태 수준을 1등급부터 9등급까지 등급화한 지표입니다.</li>
+              </ul>
+            </section>
+            <section class="content__sec2 content__section">
+              <h2 class="sec2__title">2) 건강한 '나'를 위한 보험료 할인(환급)!</h2>
+              <ul class="sec2__list">
+                <li>ㄴ건강등급 1-3등급 일 경우, 매년 1회 최대 15% 보험료 환급!</li>
+              </ul>
+            </section>
+            <section class="content__sec3 content__section">
+              <h2 class="sec3__title">3) 건강한 '나'를 위한 보험료 할인(환급)!</h2>
+              <ul class="sec3__list">
+                <li>ㄴ건강등급 1-3등급 일 경우, 매년 1회 최대 15% 보험료 환급!</li>
+                <li>* 1년 주기로 건강등급을 재산정하여 매년 1회 최대 15% 보험료 환급</li>
+              </ul>
+            </section>
+            <section class="content__sec4 content__section">
+              <h2 class="sec4__title">4) 건강한 '나'를 위한 보험료 할인(환급)!</h2>
+              <ul class="sec4__list">
+                <li>ㄴ건강등급 1-3등급 일 경우, 매년 1회 최대 15% 보험료 환급!</li>
+                <li>* 1년 주기로 건강등급을 재산정하여 매년 1회 최대 15% 보험료 환급</li>
+                <li>** 15~20세: 건강등급에 관계없이 최초 1회 보험료 할인 및 매년 1회 15% 환급 (보험나이기준)</li>
+                <li>*** 건강등급: 성별, 연령, BMI, 혈압, 공복혈당, 콜레스테롤, 흡연여부, 내원일수 등 다양한 건강 지표를 활용하여 피보험자의 상대적인 건강상태 수준을 1등급부터 9등급까지 등급화한 지표입니다.</li>
+              </ul>
+            </section>
+        </article>
       
+        <article></article>
+        <article></article>
+        <article></article>
+      </div>
     </div>
 
 </body>
