@@ -127,7 +127,7 @@ button {border-width: 0;}
     .header__inner h1 img {width: 35vw; }
     
     /*top-content*/
-    .main__title {font-size: 3.5vw;}
+    
     .main__description {font-size: 1.8vw;}
     .main__right__description {font-size: 1.8vw;}
     .main__right__description > span {font-size: 1.5vw;}
@@ -157,34 +157,36 @@ button {border-width: 0;}
     .top-content {display: none;}
     .mo__top-content {display: block;}
     .main {display: block; text-align: center;}
-    .main__subject {font-size: 5.5vw; }
+    .main__subject {font-size: 7.5vw; }
     .main__subject > strong { color: var(--bold-red);}
+    .main__title {font-size: 4.2vw;}
     
     /*form*/
-    .form__title {font-size: 3.5vw;}
+    .form__title {font-size: 5vw;}
     .form__type1 {display: block;}
-    .form__type1 input {height: 9vw; }
-    .form__type1 input {font-size: 2.5vw;}
-    .gender__inner label, .gender__inner input:checked + label { width: 9vw; height: 6vw; font-size: 2.8vw; line-height: 6vw;}
+    .form__type1 input {height: 11vw; }
+    .form__type1 input {font-size: 3.5vw;}
+    .form__birth { margin: 3vw 0;}
+    .gender__inner label, .gender__inner input:checked + label { width: 11vw; height: 8vw; font-size: 3.8vw; line-height: 8vw;}
     .form__type2 {display: block; padding: 1.569858712715856% 0;}
     .type2__agree2 {padding-top: 1.569858712715856%;}
     .form__agree {margin-left: 4vw;}
-    .form__agree > label {font-size: 3vw;}
+    .form__agree > label {font-size: 4vw;}
     .form__agree > a {font-size: 2.6vw;}
     .form__agree label:before {top: 28%;}
     .form__agree input:checked + label:after {left: 0.2%; top: 31%; width: 1.7vw; height: 1.7vw;}
-    .form__btn > button { font-size: 3vw; width: 48%; height: 9vw;}
+    .form__btn > button { font-size: 4vw; width: 48%; height: 9vw;}
     .gtm_kakao_click,
     .gtm_happy_click {display: none;}
-    .form__call-tel {font-size: 4vw; }
-    .form__type4 .form__call-tel > strong > a { font-size: 3.8vw;}
+    .form__call-tel {font-size: 5vw; }
+    .form__type4 .form__call-tel > strong > a { font-size: 5.8vw;}
     .form__call-tel {padding: 2.354788069073783% 0;}
     /*tab*/
-    .tab__list li {font-size: 2.5vw; height: 7rem; line-height: 7rem;}
+    .tab__list li {font-size: 3vw; height: 7rem; line-height: 7rem;}
     .tab__list li.on {border-bottom: 3px solid var(--middle-pink); }
     .tab__list li + li:before {height: 4rem;}
-    .sec__title {font-size: 3.6rem;}
-    .content__section .sec__list {font-size: 2.2rem;}
+    .sec__title {font-size: 4.6rem;}
+    .content__section .sec__list {font-size: 3.5rem;}
     .tab__list li > span {display: block;}
     .tab__list li:nth-child(3),
     .tab__list li:nth-child(4) {height: 7rem; line-height: 3.3rem;}
