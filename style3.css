@@ -35,6 +35,7 @@ button {border-width: 0;}
 .nav__list li:nth-last-child(1) {padding-right: 0;}
 
 .main { display: flex; justify-content: space-around; margin-top: 2.758620689655172%;} /*상위container*/
+.mo__top-content {display: none;}
 .main__left,
 .main__right {flex-basis: 45%;}
 .main__logo img {width: 50%;}
@@ -126,7 +127,6 @@ button {border-width: 0;}
     .header__inner h1 img {width: 35vw; }
     
     /*top-content*/
-    .mo__top-content {display: none;}
     .main__title {font-size: 3.5vw;}
     .main__description {font-size: 1.8vw;}
     .main__right__description {font-size: 1.8vw;}
