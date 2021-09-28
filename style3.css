@@ -5,7 +5,7 @@ h1,h2,h3 {margin: 0;}
 ul {list-style: none; margin: 0; padding: 0;}
 p {margin: 0;}
 a {text-decoration: none;}
-input {margin: 0; padding: 0; border-width: 0; }
+input {margin: 0; padding: 0; border-width: 0; -webkit-appearance: none;}
 input:focus {outline: none;}
 button {border-width: 0;}
 :root {
@@ -67,14 +67,14 @@ button {border-width: 0;}
 .gender__inner label {background-color: var(--middle-grey); display: block; height: 30px; width: 40px; line-height: 28px; text-align: center; color: #fff; font-weight: bold;}
 .gender__inner input {opacity: 0; display: none; }
 .gender__inner input:checked + label {height: 30px; width: 40px; border: 1px solid var(--bold-grey); color: #fff; background-color: var(--light-pink);}
-.form__type2 {display: flex; justify-content: center;}
+.form__type2 {display: flex; justify-content: center; margin: 1.066098081023454% 0;}
 /*.form__agree {position: relative;}*/
 .agree__btn {position: relative;}
 
 .form__agree > a {color: var(--middle-red); font-size: 0.825rem; font-weight: bold; }
 .form__agree input {opacity: 0;}
-.form__agree label:before {content:''; position: absolute; border: 1px solid var(--bold-grey); border-radius: 50%; width: 16px; height: 16px; left: 3px; top: 6px; }
-.form__agree input:checked + label:after {content: ''; position: absolute; width:10px; height: 10px; border-radius: 50%; background-color: red; left: 7px; top: 10px;}
+.form__agree label:before {content:''; position: absolute; border: 1px solid var(--bold-grey); border-radius: 50%; width: 16px; height: 16px; left: 3px; top: 2.5px; }
+.form__agree input:checked + label:after {content: ''; position: absolute; width:10px; height: 10px; border-radius: 50%; background-color: red; left: 7px; top: 6.5px;}
 .form__agree > label {padding-left: 30px; font-weight: bold; font-size: 1rem;}
 .type2__agree2 {margin-left: 3.396342563601821%;}
 .form__btn {display: flex; justify-content: space-between; padding: 2.123142250530786% 0;}
@@ -137,7 +137,7 @@ button {border-width: 0;}
     .form__type1 input {font-size: 1.5vw;}
     .gender__inner label,
     .gender__inner input:checked + label {width: 4vw; height: 3vw; font-size: 1.4vw; line-height: 3vw;}
-    .form__agree { flex-basis: 40%;}
+    .form__agree { flex-basis: 45%;}
     .form__agree > label { font-size: 1.4vw; padding-left: 3vw;}
     .form__agree > a {font-size: 1.2vw;}
     .form__btn > button {font-size: 1.4vw;}
