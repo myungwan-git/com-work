@@ -137,12 +137,13 @@ button {border-width: 0;}
     .form__type1 input {font-size: 1.5vw;}
     .gender__inner label,
     .gender__inner input:checked + label {width: 4vw; height: 3vw; font-size: 1.4vw; line-height: 3vw;}
+    .form__agree { flex-basis: 40%;}
     .form__agree > label { font-size: 1.4vw; padding-left: 3vw;}
     .form__agree > a {font-size: 1.2vw;}
     .form__btn > button {font-size: 1.4vw;}
     .form__type1 input {height: 4vw;}
-    .form__agree label:before {width: 1.7vw; height: 1.7vw; left: 0; top: 0.2vw;}
-    .form__agree input:checked + label:after { width: 1.2vw; height: 1.2vw; left: 0.34vw; top: 0.5vw;}
+    .form__agree label:before {width: 1.7vw; height: 1.7vw; left: 0; top: 0;}
+    .form__agree input:checked + label:after { width: 1.2vw; height: 1.2vw; left: 0.38vw; top: 0.35vw;}
     .form__call-tel { font-size: 2vw;}
     .form__type4 .form__call-tel > strong > a {font-size: 2.4vw;}
 
@@ -174,8 +175,8 @@ button {border-width: 0;}
     .form__agree {margin-left: 1vw;}
     .form__agree > label {font-size: 3.7vw; padding-left: 3vw;}
     .form__agree > a {font-size: 2.6vw;}
-    .form__agree label:before { width: 2.7vw; height: 2.7vw; left: -1vw; top: 1.2vw;}
-    .form__agree input:checked + label:after {left: -0.7%; top: 1.8vw; width: 1.7vw; height: 1.7vw;}
+    .form__agree label:before { width: 2.7vw; height: 2.7vw; left: -1vw; top: 0.6vw;}
+    .form__agree input:checked + label:after {left: -0.5%; top: 1.3999vw; width: 1.7vw; height: 1.7vw;}
     .form__btn > button { font-size: 4vw; width: 48%; height: 9vw;}
     .gtm_kakao_click,
     .gtm_happy_click {display: none;}
