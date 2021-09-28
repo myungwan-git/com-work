@@ -5,7 +5,7 @@ h1,h2,h3 {margin: 0;}
 ul {list-style: none; margin: 0; padding: 0;}
 p {margin: 0;}
 a {text-decoration: none;}
-input {margin: 0; padding: 0; border-width: 0; -webkit-appearance: none;}
+input {margin: 0; padding: 0; border-width: 0; -webkit-appearance: none; -webkit-border-radius: 0;}
 input:focus {outline: none;}
 button {border-width: 0;}
 :root {
@@ -68,7 +68,6 @@ button {border-width: 0;}
 .gender__inner input {opacity: 0; display: none; }
 .gender__inner input:checked + label {height: 30px; width: 40px; border: 1px solid var(--bold-grey); color: #fff; background-color: var(--light-pink);}
 .form__type2 {display: flex; justify-content: center; margin: 1.066098081023454% 0;}
-/*.form__agree {position: relative;}*/
 .agree__btn {position: relative;}
 
 .form__agree > a {color: var(--middle-red); font-size: 0.825rem; font-weight: bold; }
@@ -135,6 +134,7 @@ button {border-width: 0;}
     /*form*/
     .form__title {font-size: 2.8vw;}
     .form__type1 input {font-size: 1.5vw;}
+    .gender__inner:first-child {padding-right: 1vw;}
     .gender__inner label,
     .gender__inner input:checked + label {width: 4vw; height: 3vw; font-size: 1.4vw; line-height: 3vw;}
     .form__agree { flex-basis: 45%;}
