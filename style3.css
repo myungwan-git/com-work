@@ -126,24 +126,25 @@ button {border-width: 0;}
     .header__inner h1 img {width: 35vw; }
     
     /*top-content*/
-    .main__title {font-size: 4vw;}
-    .main__description {font-size: 1.8vw;}
+    .main__title {font-size: 5vw;}
+    .main__description {font-size: 2.8vw;}
     .main__right__description {font-size: 1.8vw;}
     .main__right__description > span {font-size: 1.5vw;}
 
     /*form*/
     .form__title {font-size: 2.8vw;}
     .form__type1 input {font-size: 1.5vw;}
-    .gender__inner:first-child {padding-right: 1vw;}
+    .gender__inner:first-child {padding-right: 0.5vw;}
     .gender__inner label,
     .gender__inner input:checked + label {width: 4vw; height: 3vw; font-size: 1.4vw; line-height: 3vw;}
     .form__agree { flex-basis: 45%;}
-    .form__agree > label { font-size: 1.4vw; padding-left: 3vw;}
-    .form__agree > a {font-size: 1.2vw;}
-    .form__btn > button {font-size: 1.4vw;}
+    .form__agree > label { font-size: 1.6vw; padding-left: 3vw;}
+    .form__agree > a {font-size: 1.4vw;}
+    .form__btn > button {font-size: 1.8vw;}
+    .form__gender {right: 1%;}
     .form__type1 input {height: 4vw;}
     .form__agree label:before {width: 1.7vw; height: 1.7vw; left: 0; top: 0;}
-    .form__agree input:checked + label:after { width: 1.2vw; height: 1.2vw; left: 0.38vw; top: 0.35vw;}
+    .form__agree input:checked + label:after { width: 1.2vw; height: 1.2vw; left: 0.38vw; top: 0.40vw;}
     .form__call-tel { font-size: 2vw;}
     .form__type4 .form__call-tel > strong > a {font-size: 2.4vw;}
 
@@ -159,12 +160,14 @@ button {border-width: 0;}
     .top-content {display: none;}
     .mo__top-content {display: block;}
     .main {display: block; text-align: center;}
+    .m-nav img {width: 7vw;}
+    .header__inner h1 img {width: 50vw;}
     .main__subject {font-size: 7.5vw; }
     .main__subject > strong { color: var(--bold-red);}
     .main__title {font-size: 4.2vw;}
     
     /*form*/
-    .form__title {font-size: 5vw;}
+    .form__title {font-size: 5vw; padding: 2.268628273914178% 0;}
     .form__type1 {display: block;}
     .form__type1 input {height: 11vw; }
     .form__type1 input {font-size: 3.5vw;}
@@ -174,7 +177,7 @@ button {border-width: 0;}
     .type2__agree2 {padding-top: 1.569858712715856%;}
     .form__agree {margin-left: 1vw;}
     .form__agree > label {font-size: 3.7vw; padding-left: 3vw;}
-    .form__agree > a {font-size: 2.6vw;}
+    .form__agree > a {font-size: 3.4vw;}
     .form__agree label:before { width: 2.7vw; height: 2.7vw; left: -1vw; top: 0.6vw;}
     .form__agree input:checked + label:after {left: -0.5%; top: 1.3999vw; width: 1.7vw; height: 1.7vw;}
     .form__btn > button { font-size: 4vw; width: 48%; height: 9vw;}
@@ -184,14 +187,14 @@ button {border-width: 0;}
     .form__type4 .form__call-tel > strong > a { font-size: 5.8vw;}
     .form__call-tel {padding: 2.354788069073783% 0;}
     /*tab*/
-    .tab__list li {font-size: 3vw; height: 7rem; line-height: 7rem;}
+    .tab__list li {font-size: 3vw; height: 9rem; line-height: 9rem;}
     .tab__list li.on {border-bottom: 3px solid var(--middle-pink); }
     .tab__list li + li:before {height: 4rem;}
     .sec__title {font-size: 4.6rem;}
     .content__section .sec__list {font-size: 3.5rem;}
     .tab__list li > span {display: block;}
     .tab__list li:nth-child(3),
-    .tab__list li:nth-child(4) {height: 7rem; line-height: 3.3rem;}
+    .tab__list li:nth-child(4) {line-height: 4.3rem;}
     
 }
 
