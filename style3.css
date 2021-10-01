@@ -70,6 +70,7 @@ button {border-width: 0;}
 .form__type2 {display: flex; justify-content: center; margin: 1.066098081023454% 0;}
 .agree__btn {position: relative;}
 
+/*form*/
 .form__agree > a {color: var(--middle-red); font-size: 0.825rem; font-weight: bold; }
 .form__agree input {opacity: 0;}
 .form__agree label:before {content:''; position: absolute; border: 1px solid var(--bold-grey); border-radius: 50%; width: 16px; height: 16px; left: 3px; top: 2.5px; }
@@ -164,6 +165,7 @@ button {border-width: 0;}
 
 @media screen and (max-width: 768px) {
     html {font-size: 1vw;}
+    /*top-content*/
     .top-content {display: none;}
     .mo__top-content {display: block;}
     .main {display: block; text-align: center;}
@@ -193,6 +195,7 @@ button {border-width: 0;}
     .form__call-tel {font-size: 5vw; }
     .form__type4 .form__call-tel > strong > a { font-size: 5.8vw;}
     .form__call-tel {padding: 2.354788069073783% 0;}
+
     /*tab*/
     .tab__list li {font-size: 3vw; height: 9rem; line-height: 9rem;}
     .tab__list li.on {border-bottom: 3px solid var(--middle-pink); }
