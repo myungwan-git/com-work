@@ -101,6 +101,13 @@ button {border-width: 0;}
 .content__section {border-bottom: 1px solid var(--light-grey); padding: 3.629764065335753% 1.814882032667877%;}
 .content__section .sec__list {padding-left: 0.9416195856873823%; font-weight: bold; color: var(--bold-grey); padding-top: 0.9416195856873823%; }
 
+/*ios ( safari ) browser*/
+@media not all and (min-resolution:.001dpcm) { 
+    @media screen and (min-width: 1024px) {
+        .form__agree {flex-basis: 50%;}
+    }
+    
+}
 
 /*small PC*/
 @media screen and (max-width: 1200px) {
