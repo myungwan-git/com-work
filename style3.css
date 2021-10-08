@@ -147,11 +147,15 @@ button {border-width: 0;}
     .mo-nav__list__inner > dt { font-size: 5vw;}
 
     .mo-nav__list .mo-nav__arrow { transform: rotate(-90deg); width: 3vw;}
-    
+    .mo-nav__list__depth2{display: none;}
+
+    .mo-nav__list.over .mo-nav__arrow {transform: rotate(90deg);}
+    .mo-nav__list.over .mo-nav__list__depth2 {display: block;}
+
     .mo-nav__list__depth2__inner > li {padding: 1vw 0; background-color: #f0f0f0; padding: 2vw 6vw 2vw 4vw; font-size: 4vw; border-bottom: 1px solid var(--middle-grey); }
     .mo-nav__list__depth2__inner > li::before {content: "\00B7"; padding-right: 2vw;}
 
-    .mo-nav__logo { width: 80%; background-color: var(--middle-red); display: flex; justify-content: space-between; padding: 0 4vw; align-items: center;}
+    .mo-nav__logo { width: 80%; background-color: var(--middle-red); display: flex; justify-content: space-between; padding: 2vw 4vw; align-items: center;}
     .mo-nav__logo > h1 > img { width: 20vw;}
     .mo-nav__logo .mo-toggle__close { width: 8vw; height: 8vw; padding: 2.5vw; margin-right: -4vw;}
     .header__border {border: 0;}
