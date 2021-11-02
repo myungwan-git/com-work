@@ -1,22 +1,35 @@
 /* 
 * mouse over on pc menu -> display menu items 
 */
-/* 
-const header = document.querySelector("#header");
-const nav = document.querySelector("#nav");
-nav.addEventListener('mouseover', depth2Show());
-//nav.addEventListener('mouseleave', depth2_hide());
-function depth2Show() {
-  header.classList.add('over');
-  console.log("WWW");
-}
+const headerBorder = document.querySelector('#header');
+const navInner = document.querySelector('.nav__inner');
+navInner.addEventListener('mouseover', () => {
+  headerBorder.classList.add('over');
+});
+navInner.addEventListener('mouseleave', () => {
+  headerBorder.classList.remove('over');
+});
 
+/*
+* mouse over on pc menu -> display depth1 menu border-bottom red
 */
-const header = document.querySelector(".header__inner");
-const nav = document.querySelector("#nav");
-nav.addEventListener('mouseover', () => {
-  header.classList.add('over');
+const depth1 = document.querySelectorAll('.nav__depth1');
+depth1.forEach(function(element) {
+  element.addEventListener('mouseover', () => {
+    const depth1Parent = element.closest('li');
+    depth1Parent.classList.add('on');
+  });
+  element.addEventListener('mouseleave', () => {
+    const depth1Parent = element.closest('li');
+    depth1Parent.classList.remove('on');
+  });
 });
-nav.addEventListener('mouseleave', () => {
-  header.classList.remove('over');
-});
+
+
+
+
+
+
+
+
+
