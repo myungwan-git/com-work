@@ -120,7 +120,6 @@ button {border-width: 0;}
     @media screen and (min-width: 1024px) {
         .form__agree {flex-basis: 50%;}
     }
-    
 }
 
 /*small PC*/

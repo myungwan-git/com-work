@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {padding: 0; margin: 0;}
+</style>
+<!--
+<div id="side_sticky_menu" th:fragment="sticky_menu_template1">
+	<div class="menu_box">
+		<div class="menu_title">추천상품</div>
+		<div class="menu_hr"></div>
+		<div class="menu_item" data-url="/cancer.html">
+			<img th:src="@{/img/common/side_stickyicon01.png}" alt="" /> 3대질환 진단비 보장<br /> <span>암보험</span>
+		</div>
+		<div class="menu_hr"></div>
+		<div class="menu_item" data-url="/child.html">
+			<img th:src="@{/img/common/side_stickyicon03.png}" alt="" /> 우리아이 100세까지<br /> <span>자녀보험</span>
+		</div>
+		<div class="add_title">무료 상담 신청</div>
+		<div class="add_title">보험료 계산</div>
+	</div>
+	<div class="go-top">TOP ▲</div>
+</div>
+-->
+<body>
+  <div class="insurance_box">
+    <p class="insurance_title">내 보험료 확인</p>
+    <div class="insurance_cal">
+      <form id="submit_form5">
+        <section class="sec-ty1">
+          <input type="hidden" name="sid" />
+          <div class="row name-part">
+            <input type="text" style="ime-mode: active" value="" placeholder="이름(홍길동)" onkeyup="hangulOnly(this);" name="user_name" class="placeholder" maxlength="8">
+          </div>
+          <div class="gender-part">
+            <div class="btn-check-type">
+              <input type="radio" name="gender" value="m" id='gender_m' checked>
+              <label class="label-custom" for='gender_m'>남</label>
+            </div>
+            <div class="btn-check-type">
+              <input type="radio" name="gender" value="f" id='gender_f'>
+              <label class="label-custom" for='gender_f'>여</label>
+            </div>
+          </div>
+        </section>
+        
+        <section class="sec-ty2">
+          <div class="birth-part">
+            <input id="birth" name="user_birth" type="tel" value="" placeholder="생년월일(19901111)" maxlength="8" onkeyup="numberOnly(this);" oninput="numLengthCheck(this);" class="placeholder">
+          </div>
+        </section>
+
+        <section class="sec-ty3">
+          <div class="row tel-part">
+            <input type="tel" placeholder="휴대폰번호(-없이 입력해 주세요)" name="user_tel" onkeyup="numberOnly(this);" oninput="numLengthCheck(this);" maxlength="11" />
+          </div>
+        </section>
+
+        <section class="sec-ty4">
+          <article class="btn-box">
+            <button type="button" class="calc-btn" onclick="openCalcPopup('#submit_form3', 'calc')">보험료 계산하기</button>
+          </article>
+        </section>
+
+      </form>
+    </div>
+    
+    <div class="insurance_img">3대질환 진단비 보장 <br> <strong>암보험</strong></div>
+    <div class="insurance_img">우리아이 100세까지 <br> <strong>자녀보험</strong></div>
+    
+    <div class="insurance_top">TOP ▲</div>
+  </div>
+</body>
+</html>
