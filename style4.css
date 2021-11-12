@@ -34,6 +34,7 @@ button {border-width: 0;}
 .header__border { border-bottom: 1px solid var(--light-grey); align-items: center; }
 .header__content { display: flex; height: 100%;}
 .moToggle {display: none;}
+#mo-nav { left: -100%; top: 0; width: 100%; position: absolute; transition: all 0.3s; z-index: 10; }
 .header__logo { width: 85%;}
 #nav { flex-basis: 70%;}
 .nav__list {display: flex; height: 100%;}
@@ -182,8 +183,25 @@ button {border-width: 0;}
     .header__border {border-bottom: 0;}
     .header__logo {width: 32vw;}
     #nav { display: none;}
+    
     .moToggle {display: block; margin: 0 3vw;}
     .moToggle > img {width: 6vw;}
+    #mo-nav.over { left: 0; }
+    .mo-nav__section {width: 80%;}
+    .mo-nav__list.over .mo-nav__list__inner {background-color: var(--light-grey);}
+    .mo-nav__list__inner {display: flex; justify-content: space-between; padding: 1vw 0; background-color: #fff; padding: 3vw 6vw 3vw 4vw;}
+    .mo-nav__list__inner > dt { font-size: 4vw; font-weight: bold;}
+    .mo-nav__list {border-bottom: 1px solid var(--middle-grey);}
+    .mo-nav__list__depth2{display: none;}
+    .mo-nav__list .mo-nav__arrow { transform: rotate(90deg); width: 2.5vw;}
+    .mo-nav__list.over .mo-nav__arrow {transform: rotate(-90deg);}
+    .mo-nav__list.over .mo-nav__list__depth2 {display: block;}
+    .mo-nav__list__depth2__inner > li {padding: 1vw 0; background-color: #f0f0f0; padding: 3vw 6vw 3vw 4vw; font-size: 3.5vw; border-bottom: 1px solid var(--middle-grey); font-weight: 500;}
+    .mo-nav__list__depth2__inner > li:last-child {border-bottom: none;}
+    .mo-nav__list__depth2__inner > li::before {content: "\00B7"; padding-right: 2vw;}
+    .mo-nav__logo { width: 80%; background-color: var(--middle-red); display: flex; justify-content: space-between; padding: 2vw 4vw; align-items: center;}
+    .mo-nav__logo > h1 > img { width: 20vw;}
+    .mo-nav__logo .mo-toggle__close { width: 8vw; height: 8vw; padding: 2.5vw; margin-right: -4vw;}
     .header__content {align-items: center; margin: 2em 0;}
 
     /*main content*/
