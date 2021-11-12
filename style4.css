@@ -150,6 +150,15 @@ button {border-width: 0;}
 */
 
 /*
+* ios ( safari ) browser
+*/
+@media not all and (min-resolution:.001dpcm) { 
+    @media screen and (min-width: 1024px) {
+        .form__agree {flex-basis: 50%;}
+    }
+}
+
+/*
 * small PC
 */
 @media screen and (max-width: 1440px) {
@@ -173,14 +182,36 @@ button {border-width: 0;}
     .header__border {border-bottom: 0;}
     .header__logo {width: 32vw;}
     #nav { display: none;}
-    .moToggle {display: block; margin: 0 2em;}
+    .moToggle {display: block; margin: 0 3vw;}
+    .moToggle > img {width: 6vw;}
     .header__content {align-items: center; margin: 2em 0;}
 
     /*main content*/
     .content {align-items: center;}
+    .content__left__description {font-size: 3vw;}
     .content__left__logo > img {width: 26vw;}
-    .content__left__title {font-size: 5vw;}
+    .content__left__title {font-size: 4.5vw;}
     .content__right {flex-basis: 50%;}
     .content__right__list__description {font-size: 2vw;}
     .content__right__list__description > span {font-size: 1.5vw;}
+
+    /*form*/
+    .form__title {font-size: 3vw;}
+    .form__agree { flex-basis: 50%;}
+    .form__gender {right: 0;}
+    .gender__inner:first-child {padding-right: 0.5vw;}
+    .gender__inner label {width: 4vw; height: 3vw; }
+    .gender__inner input:checked + label {width: 4vw; height: 3vw; }
+    .form__type1 input {font-size: 1.6vw;}
+    .form__agree > label {font-size: 1.6vw}
+    .form__agree > a {font-size: 1.4vw;}
+    .form__agree label:before {width: 1.8vw; height: 1.8vw; top: 0;}
+    .form__agree input:checked + label:after {width: 1.3vw; height: 1.3vw; top: 0.38vw; left: 0.75vw;}
+    .form__btn > button {font-size: 1.7vw;}
+    .form__type4 {font-size: 2vw;}
+    .form__type4 .form__call-tel > strong > a {font-size: 3vw;}
+
+
+    
+    
 }
