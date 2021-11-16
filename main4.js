@@ -37,6 +37,33 @@ depth2.forEach(function(element) {
 });
 
 
+/**
+ * moToggle btn click -> show moNav
+ */
+const moToggle = document.querySelector("#moToggle");
+const moNav = document.querySelector("#moNav");
+const moToggleClose = document.querySelector("#moToggle__close");
+const bg_black = document.querySelector(".bg__black");
+moToggle.addEventListener('click', () => {
+  moNav.classList.add('over')
+  bg_black.classList.add('on');
+});
+moToggleClose.addEventListener('click', () => {
+  moNav.classList.remove('over')
+  bg_black.classList.remove('on');
+});
+
+/**
+ * moNav arrow click -> moNav__list__depth2 show
+ */
+const moNavListInner = document.querySelectorAll(".moNav__list__inner");
+moNavListInner.forEach(function(element) {
+  element.addEventListener('click', () => {
+    const moNavArrowClicked = document.querySelector(".moNav__list.over");
+    element.closest('dl').classList.add('over');
+    moNavArrowClicked.classList.remove('over');
+  });
+});
 
 
 
