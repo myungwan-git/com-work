@@ -125,7 +125,7 @@ button {border-width: 0;}
 * middle tab ( content move )
 */
 .tab__list {display: flex; justify-content: space-between; }
-.tab__list li {flex-basis: 25%; text-align: center; color: var(--middle-pink); font-weight: bold; font-size: 1.2rem; height: 3em; line-height: 3em; cursor: pointer;  position: relative;}
+.tab__list li {flex-basis: 25%; text-align: center; color: var(--middle-pink); font-weight: bold; font-size: 1.2rem; /*height: 3em; line-height: 3em;*/ padding: 0.8em 0; cursor: pointer;  position: relative;}
 .tab__list li + li:before { content: ''; width: 1px; height: 1.8em; background-color: var(--light-grey); position: absolute; left: 0; top: 20%;}
 .tab__list li.on { border-bottom: 5px solid var(--middle-pink); }
 
@@ -252,21 +252,33 @@ button {border-width: 0;}
 
     /*main content*/
     .main {display: none;}
-    .moMain { display: block; text-align: center; padding-top: 4vw;}
+    .content-form {margin-top: 7em;}
+    .moMain { display: block; text-align: center; padding-top: 8vw;}
     .moMain__content__title {font-size: 4vw; font-weight: bold;}
-    .moMain__content__inner > h2 {font-size: 5.5vw; font-weight: bold; padding-top: 3vw;}
+    .moMain__content__inner > h2 {font-size: 7.5vw; font-weight: bold; padding-top: 3vw;}
     .moMain__content__inner > h2 > strong { color: var(--bold-red);}
     
     /*form*/
-    .form__title {font-size: 5vw;}
+    .form__title {font-size: 6vw;}
     .form__type1 {display: block;}
     .form__type1 input {font-size: 3.5vw; height: 3.5em;}
     .gender__inner input:checked + label,
     .gender__inner label {width: 9vw; height: 7vw; font-size: 3.6vw; }
     .form__type2 {display: block;}
     .form__agree label:before {top: 50%; left: 2vw; transform: translate(0, -50%); width: 3vw; height: 3vw;}
-    .form__agree input:checked + label:after {width: 2.5vw; height: 2.5vw; top: 50%; left: 2.5vw; transform: translate(0, -50%);}
+    .form__agree input:checked + label:after {width: 2.5vw; height: 2.5vw; top: 50%; left: 2.45vw; transform: translate(0, -50%);}
     .form__agree > a {font-size: 3vw;}
     .type2__agree2 {margin-left: 0;}
-    .form__agree > label {font-size: 3.4vw;}
+    .form__agree > label {font-size: 3.7vw;}
+    .consult_btn_pc {display: none;}
+    .cal_chat_pc {display: none;}
+    .form__btn > button {width: 48%; font-size: 4.2vw; padding: 0.4em 0; height: auto;}
+    .form__type4 {font-size: 4vw; }
+    .form__type4 .form__call-tel > strong > a {font-size: 5vw;}
+
+    /* middle tab (content move) */
+    .tab__list li {font-size: 3.5vw; padding: 0.3em 0;}
+    .tab__list li > span { display: block;}
+
+
 }
