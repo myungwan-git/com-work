@@ -43,27 +43,64 @@ depth2.forEach(function(element) {
 const moToggle = document.querySelector("#moToggle");
 const moNav = document.querySelector("#moNav");
 const moToggleClose = document.querySelector("#moToggle__close");
-const bg_black = document.querySelector(".bg__black");
+const bgBlack = document.querySelector(".bg__black");
+const body = document.querySelector("body");
 moToggle.addEventListener('click', () => {
-  moNav.classList.add('over')
-  bg_black.classList.add('on');
+  moNav.classList.add('over');
+  bgBlack.classList.add('on');
 });
 moToggleClose.addEventListener('click', () => {
-  moNav.classList.remove('over')
-  bg_black.classList.remove('on');
+  moNav.classList.remove('over');
+  bgBlack.classList.remove('on');
 });
+body.addEventListener('click', (event) => {
+  const target = event.target;
+  if(target == event.currentTarget.querySelector(".bg__black.on")) {
+    moNav.classList.remove('over');
+    bgBlack.classList.remove('on');
+  }
+});
+
 
 /**
  * moNav arrow click -> moNav__list__depth2 show
  */
 const moNavListInner = document.querySelectorAll(".moNav__list__inner");
 moNavListInner.forEach(function(element) {
-  element.addEventListener('click', () => {
+  element.addEventListener('click', (event) => {
     const moNavArrowClicked = document.querySelector(".moNav__list.over");
-    element.closest('dl').classList.add('over');
-    moNavArrowClicked.classList.remove('over');
+    const moNavArrowNewClicked = event.target.closest('dl');
+    if(moNavArrowClicked === moNavArrowNewClicked) {
+      return;
+    }else {
+      moNavArrowNewClicked.classList.add('over');
+      moNavArrowClicked.classList.remove('over');
+    }
   });
 });
+
+
+/**
+ * tab__list click -> show content
+ */
+const tabList = document.querySelectorAll(".tab__list>li");
+
+tabList.forEach(function(element) {
+  element.addEventListener('click', (event) => {
+    const tabClicked = document.querySelector(".tab__list>li.on");
+    const tab = element.parentNode;
+    const tabIndex =  [].indexOf.call(element.parentNode.children, element);
+
+    if(element !== tabClicked) {
+      
+    }else {
+      return;
+    }
+
+  });
+});
+
+
 
 
 

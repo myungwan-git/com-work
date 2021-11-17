@@ -133,6 +133,8 @@ button {border-width: 0;}
 * middle tab1 product
 */
 .product { padding: 0 2em 2em 2em;}
+.contents__inner > article { display: none;}
+.contents__inner > article.on {display: block;}
 .product__content {padding: 2em 0; border-bottom: 1px solid var(--light-grey);}
 .product__content > h3 {font-size: 1.3rem;}
 .product__content__description {padding-left: 1em; padding-top: 0.5em; font-weight: bold; color: var(--super-bold-grey); font-size: 0.9rem;}
@@ -190,9 +192,9 @@ button {border-width: 0;}
     #nav { display: none;}
     #moToggle {display: block; margin: 0 3vw;}
     #moToggle > img {width: 6vw;}
+    #moNav {width: 80%;}
     #moNav.over { left: 0; }
     #moToggle__close { width: 8vw; height: 8vw; padding: 2.5vw; margin-right: -4vw;}
-    .moNav__section {width: 80%;}
     .moNav__list.over .moNav__list__inner {background-color: var(--light-grey);}
     .moNav__list__inner {display: flex; justify-content: space-between; padding: 1vw 0; background-color: #fff; padding: 3vw 6vw 3vw 4vw;}
     .moNav__list__inner > dt { font-size: 2.2rem; font-weight: bold;}
@@ -204,7 +206,7 @@ button {border-width: 0;}
     .moNav__list__depth2__inner > li {padding: 1vw 0; background-color: #f0f0f0; padding: 3vw 6vw 3vw 4vw; font-size: 2rem; border-bottom: 1px solid var(--middle-grey); font-weight: 500;}
     .moNav__list__depth2__inner > li:last-child {border-bottom: none;}
     .moNav__list__depth2__inner > li::before {content: "\00B7"; padding-right: 2vw;}
-    .moNav__logo { width: 80%; background-color: var(--middle-red); display: flex; justify-content: space-between; padding: 2vw 4vw; align-items: center;}
+    .moNav__logo { background-color: var(--middle-red); display: flex; justify-content: space-between; padding: 2vw 4vw; align-items: center;}
     .moNav__logo > h1 > img { width: 25vw;}
     .header__content {align-items: center; padding-top: 2em;}
 
@@ -281,6 +283,7 @@ button {border-width: 0;}
     .tab__list li:nth-child(1),
     .tab__list li:nth-child(2) {line-height: 2em;}
     .tab__list li > span { display: block;}
+    .tab__list li.on {border-bottom: 4px solid var(--middle-pink);}
 
 
 }
