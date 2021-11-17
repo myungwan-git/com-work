@@ -95,10 +95,10 @@ button {border-width: 0;}
 .form__type1 input {border-bottom: 1px solid var(--bold-grey); width: 100%; height: 3em; padding-left: 3px; font-size: 0.9rem;}
 .form__type1 .form__name,
 .form__type1 .form__birth,
-.form__type1 .form__tel {flex-basis: 28%; position: relative;}
-.form__gender { display: flex; position: absolute; right: 3%; bottom: 8%;}
+.form__type1 .form__tel {flex-basis: 29%; position: relative;}
+.form__gender { display: flex; position: absolute; right: 0; bottom: 0.5em; }
 .gender__inner {position: relative;}
-.gender__inner:first-child {padding-right: 7.462686567164179%;}
+.gender__inner:first-child {padding-right: 0.4em;}
 .gender__inner label {background-color: var(--middle-grey); display: block; height: 1.8em; width: 2.4em; line-height: 1.8em; text-align: center; color: #fff; font-weight: bold;}
 .gender__inner input {opacity: 0; display: none; }
 .gender__inner input:checked + label {height: 1.8em; width: 2.4em; border: 1px solid var(--bold-grey); color: #fff; background-color: var(--light-pink);}
@@ -195,13 +195,13 @@ button {border-width: 0;}
     .moNav__section {width: 80%;}
     .moNav__list.over .moNav__list__inner {background-color: var(--light-grey);}
     .moNav__list__inner {display: flex; justify-content: space-between; padding: 1vw 0; background-color: #fff; padding: 3vw 6vw 3vw 4vw;}
-    .moNav__list__inner > dt { /*font-size: 4vw;*/ font-weight: bold;}
+    .moNav__list__inner > dt { font-size: 2.2rem; font-weight: bold;}
     .moNav__list {border-bottom: 1px solid var(--middle-grey);}
     .moNav__list__depth2{display: none;}
     .moNav__list .moNav__arrow { transform: rotate(90deg); width: 2.5vw;}
     .moNav__list.over .moNav__arrow {transform: rotate(-90deg);}
     .moNav__list.over .moNav__list__depth2 {display: block;}
-    .moNav__list__depth2__inner > li {padding: 1vw 0; background-color: #f0f0f0; padding: 3vw 6vw 3vw 4vw; /*font-size: 3.5vw;*/ border-bottom: 1px solid var(--middle-grey); font-weight: 500;}
+    .moNav__list__depth2__inner > li {padding: 1vw 0; background-color: #f0f0f0; padding: 3vw 6vw 3vw 4vw; font-size: 2rem; border-bottom: 1px solid var(--middle-grey); font-weight: 500;}
     .moNav__list__depth2__inner > li:last-child {border-bottom: none;}
     .moNav__list__depth2__inner > li::before {content: "\00B7"; padding-right: 2vw;}
     .moNav__logo { width: 80%; background-color: var(--middle-red); display: flex; justify-content: space-between; padding: 2vw 4vw; align-items: center;}
@@ -210,34 +210,21 @@ button {border-width: 0;}
 
     /*main content*/
     .content {align-items: center;}
-    /* .content__left__description {font-size: 3vw;} */
     .content__left__logo > img {width: 26vw;}
-    /* .content__left__title {font-size: 4.5vw;} */
     .content__right {flex-basis: 50%;}
-    /* .content__right__list__description {font-size: 2vw;} */
     .content__right__list__description::before {width: 35vw;}
-    /* .content__right__list__description > span {font-size: 1.5vw;} */
 
     /*form*/
-    /* .form__title {font-size: 3vw;} */
-    .form__agree { flex-basis: 50%;}
-    .form__gender {right: 0;}
-    .gender__inner:first-child {padding-right: 0.5vw;}
-    .gender__inner label {width: 4vw; height: 3vw; /*font-size: 1.6vw;*/}
-    .gender__inner input:checked + label {width: 4vw; height: 3vw; /*font-size: 1.6vw;*/}
-    /* .form__type1 input {font-size: 1.6vw;} */
-    /* .form__agree > label {font-size: 1.6vw;} */
-    /* .form__agree > a {font-size: 1.4vw;} */
+    .form__title {font-size: 2rem;}
+    .form__gender {font-size: 0.9rem;}
+    .gender__inner:first-child {padding-right: 0.3vw;}
+    .gender__inner label {width: 4vw; height: 3vw; }
+    .gender__inner input:checked + label {width: 4vw; height: 3vw;}
+    .type2__agree2 {margin-left: 0;}
+    .form__agree {flex-basis: 55%;}
+    .form__agree:last-child {flex-basis: 45%;}
     .form__agree label:before {width: 1.8vw; height: 1.8vw; top: 0;}
     .form__agree input:checked + label:after {width: 1.3vw; height: 1.3vw; top: 0.38vw; left: 0.75vw;}
-    /* .form__btn > button {font-size: 1.7vw;} */
-    /* .form__type4 {font-size: 2vw;} */
-    /* .form__type4 .form__call-tel > strong > a {font-size: 3vw;} */
-
-    /*middle tab ( content move )*/
-    /* .tab__list li {font-size: 2vw;} */
-    /* .product__content > h3 {font-size: 2vw;} */
-    /* .product__content__description {font-size: 1.5vw;} */
 }
 
 /*
@@ -245,6 +232,7 @@ button {border-width: 0;}
 */
 @media screen and (max-width: 900px) {
     html {font-size: 15px;}
+    .container {max-width: 900px;}
 }
 
 /*
