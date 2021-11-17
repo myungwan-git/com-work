@@ -205,7 +205,7 @@ button {border-width: 0;}
     .moNav__list__depth2__inner > li:last-child {border-bottom: none;}
     .moNav__list__depth2__inner > li::before {content: "\00B7"; padding-right: 2vw;}
     .moNav__logo { width: 80%; background-color: var(--middle-red); display: flex; justify-content: space-between; padding: 2vw 4vw; align-items: center;}
-    .moNav__logo > h1 > img { width: 20vw;}
+    .moNav__logo > h1 > img { width: 25vw;}
     .header__content {align-items: center; padding-top: 2em;}
 
     /*main content*/
@@ -246,6 +246,10 @@ button {border-width: 0;}
     .moCall > img { width: 5vw;}
     .gtm_call_confirm {padding-left: 1vw; font-weight: bold;}
 
+    /*navigation*/
+    .moNav__list__inner > dt {font-size: 4.5vw;}
+    .moNav__list__depth2__inner > li {font-size: 4vw;}
+
     /*main content*/
     .main {display: none;}
     .content-form {margin-top: 7em;}
@@ -255,7 +259,7 @@ button {border-width: 0;}
     .moMain__content__inner > h2 > strong { color: var(--bold-red);}
     
     /*form*/
-    .form__title {font-size: 6vw;}
+    .form__title {font-size: 5vw;}
     .form__type1 {display: block;}
     .form__type1 input {font-size: 3.5vw; height: 3.5em;}
     .gender__inner input:checked + label,
@@ -274,6 +278,8 @@ button {border-width: 0;}
 
     /* middle tab (content move) */
     .tab__list li {font-size: 3.5vw; padding: 0.3em 0;}
+    .tab__list li:nth-child(1),
+    .tab__list li:nth-child(2) {line-height: 2em;}
     .tab__list li > span { display: block;}
 
 
