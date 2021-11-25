@@ -84,15 +84,22 @@ moNavListInner.forEach(function(element) {
  * tab__list click -> show content
  */
 const tabList = document.querySelectorAll(".tab__list>li");
-
+const productList = document.querySelectorAll(".product");
 tabList.forEach(function(element) {
   element.addEventListener('click', (event) => {
     const tabClicked = document.querySelector(".tab__list>li.on");
     const tab = element.parentNode;
     const tabIndex =  [].indexOf.call(element.parentNode.children, element);
+    const productClicked = document.querySelector(".product.on");
+    console.log("tabClicked = ",tabClicked);
+    console.log("tab = ",tab);
+    console.log("tabIndex = ",tabIndex);
 
     if(element !== tabClicked) {
-      
+      tabClicked.classList.remove("on");
+      element.classList.add("on");
+      productClicked.classList.remove("on");
+      productList[tabIndex].classList.add("on");
     }else {
       return;
     }
