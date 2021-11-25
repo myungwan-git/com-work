@@ -180,9 +180,10 @@ button {border-width: 0;}
 @media screen and (max-width: 1635px) {
     .sticky {right: 0;}
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
     .container {max-width: 1040px;}
     html {font-size: 15px;}
+    .sticky {display: none;}
 }
 @media screen and (max-width: 1200px) {
     .container {max-width: 960px;}
