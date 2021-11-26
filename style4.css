@@ -29,7 +29,7 @@ button {border-width: 0;}
 /*
 ** sticky menu
 */
-.sticky {border: 1px solid var(--bold-grey); width: 11rem; position: absolute; right: 5rem; top: 0; z-index: 100; }
+.sticky {border: 1px solid var(--bold-grey); width: 11rem; position: absolute; right: 5rem; top: 0; z-index: 100; transition: all 0.8s ease;}
 .sticky__menu {text-align: center;}
 .sticky__title {color: #fff; background-color: var(--middle-red); padding: 0.3rem 0; font-weight: bold; }
 .sticky__menu__item {padding: 1rem 0; background-color: #fff;}
