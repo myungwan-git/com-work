@@ -15,11 +15,11 @@
             <div class="container">
               <div class="header__content">
 
-                <!--mobild toggle btn START-->
+                <!--mobile toggle btn START-->
                 <div id="moToggle">
                   <img src="	https://m.lotteinsu.com/img/mobile/left_menu.png" alt="전체메뉴">
                 </div>
-                <!--mobild toggle btn END-->
+                <!--mobile toggle btn END-->
 
                 <!--mobile navigation START-->
                 <nav id="moNav">
@@ -268,7 +268,7 @@
                 <div class="form__title"><strong>7초 보험료</strong> 간편계산 & 상담신청</div>
                 <section class="form__type1">
                   <div class="form__name">
-                    <input type="text" placeholder="이름(김롯데)" name="user_name" maxlength="8">
+                    <input type="text" placeholder="이름(김롯데)" value="" name="user_name" maxlength="8">
                   </div>
                   <div class="form__birth">
                     <input type="text" placeholder="생년월일 (19900101)" name="user_birth" maxlength="8">
@@ -301,8 +301,8 @@
                 </section>
                 <section class="form__type3">
                   <div class="form__btn">
-                    <button type="button" class="gtm_calc_click" onclick=""><i class="fas fa-check label-check"></i>간편 보험료 계산</button>
-                    <button type="button" class="gtm_consult_click" onclick=""><i class="fas fa-check label-check"></i>무료 상담신청</button>
+                    <button type="button" class="gtm_calc_click" onclick="sendForm('#submit_form1','calc')"><i class="fas fa-check label-check"></i>간편 보험료 계산</button>
+                    <button type="button" class="gtm_consult_click" onclick="sendForm('#submit_form1','call')"><i class="fas fa-check label-check"></i>무료 상담신청</button>
                     <button type="button" class="gtm_kakao_click consult_btn_pc" onclick=""><i class="fas fa-comment"></i>상담하기</button>
                     <button type="button" class="gtm_happy_click cal_chat_pc" onclick=""><i class="fas fa-check label-check"></i>채팅으로 보험료확인</button>
                   </div>
@@ -365,8 +365,24 @@
         </div>
       </div>
 
+      <footer>
+        <section class="footer">
+          <p class="footer__top">
+            광고대행사 : 엠플랜잇은 페이지 제작 및 광고 대행만을 진행하며, 보험상품 판매에 직접적인 관여를 하지 않습니다. <br>
+            동 상품광고는 관련 법령 및 내부통제기준에 따른 광고 관련 절차를 준수하여 작성되었음을 안내 드립니다.
+          </p>
+          <address>
+            개인정보 수집자 : 롯데손해보험주식회사 / 주소 : 서울특별시 중구 소월로3 (남창동, 롯데손해보험빌딩) / 대표이사 : 이명재 / 사업자등록번호 : 104-81-30770 <br>
+          </address>
+          <div class="regulationNumber">
+            준법심의필 제A0154호(2021.06.17)
+          </div>
+        </section>
+      </footer>
+
     </div>
 </body>
 
 <script type="text/javascript" src="main4.js"></script>
+<script type="text/javascript" src="validation.js"></script>
 </html>
